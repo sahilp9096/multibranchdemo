@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    def MINGW_HOME=
+    
     stages {
         stage('Build CPP Program') {
             steps {
