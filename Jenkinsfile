@@ -1,10 +1,10 @@
 pipeline {
     agent any
-
+    def MINGW_HOME=
     stages {
         stage('Build CPP Program') {
             steps {
-                bat 'make -f makefile hello_world'
+                bat 'g++ HelloWorld.cpp -o hello_world'
             }
         }
     }
