@@ -11,12 +11,11 @@ pipeline {
      {
         stage('test cmd shell') 
         {
-             steps 
+            steps 
             {
                 echo 'execute cmd ...'
                 bat label: '', script: 'ipconfig  -all'
             }
-  
         }
      }
 }
