@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build CPP Program') {
             steps {
-                echo 'Build cpp program'
+                bat 'g++ HelloWorld.cpp -o helloworld.exe'
             }
         }
     }
