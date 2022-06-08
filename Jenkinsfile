@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build CPP Program') {
             steps {
-                sh 'make makefile'
+                sh 'make -f makefile'
             }
         }
     }
