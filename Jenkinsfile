@@ -7,16 +7,13 @@ pipeline {
                 echo "building"
             }
         }
-     stages
-     {
-        stage('test cmd shell') 
-        {
-            steps 
-            {
+        stages {
+        stage('ip config') {
+            steps {
                 echo 'execute cmd ...'
                 bat label: '', script: 'ipconfig  -all'
             }
         }
-     }
-}
+  
+
 }
