@@ -18,9 +18,12 @@ pipeline {
         
     
      
-        stage('Hello') {
+        stage('Run code') {
             steps {
-                echo 'Hello World'
+                script
+                {
+                    bat 'HelloWorld'
+                }
             }
         }
     
