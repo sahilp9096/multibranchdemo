@@ -25,7 +25,7 @@ pipeline {
                     environment {
                         env.PATH = env.PATH + ";c:\\Windows\\System32"
                     
-                        def statusCode = bat script: "HelloWorld", returnStatus:true
+                        def statusCode = bat script: "HelloWorld.exe", returnStatus:true
                         echo "$statusCode"
                     }
                     
