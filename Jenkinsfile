@@ -32,7 +32,7 @@ pipeline {
                     }
                     
                 }
-               echo "$statusCode" 
+                echo "${statusCode}" 
             }
         }
     
