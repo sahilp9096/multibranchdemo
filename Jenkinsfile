@@ -17,4 +17,14 @@ pipeline {
         }
         
     }
+    stages {
+        stage('run a program') {
+            steps {
+                script
+                {
+                    bat 'HelloWorld.exe'
+                }
+            }
+        }
+    
 }
