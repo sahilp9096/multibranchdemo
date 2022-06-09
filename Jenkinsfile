@@ -5,7 +5,8 @@ pipeline {
         stage('Build CPP Program') {
             steps {
                  environment {
-       env.PATH = env.PATH + ";c:\\Windows\\System32"
+                     path='c:\\Windows\\System32'
+       
    }
                bat 'g++ HelloWorld.cpp -o HelloWorld'
             }
