@@ -24,8 +24,8 @@ pipeline {
                 {
                     environment {
              env.PATH = env.PATH + ";c:\\Windows\\System32"
-                    output=bat 'HelloWorld'
-                        echo ${output}
+                    bat 'HelloWorld'
+                        
                     }
                 }
             }
