@@ -11,7 +11,7 @@ pipeline {
          
                 
                     bat 'g++ HelloWorld.cpp -o HelloWorld'
-                }
+                    }
                 }
             }
         }
