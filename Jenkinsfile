@@ -1,3 +1,4 @@
+def statusCode =''
 pipeline {
     agent any
      
@@ -20,7 +21,7 @@ pipeline {
      
         stage('Run code') {
             steps {
-                def statusCode =' '
+                
                 script
                 {
                     environment {
