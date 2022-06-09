@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build CPP Program') {
             steps {
-                g++ HelloWorld.cpp -o helloworld
+               bat 'g++ HelloWorld.cpp -o HelloWorld'
             }
         }
         
