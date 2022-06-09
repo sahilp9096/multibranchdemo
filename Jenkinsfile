@@ -1,18 +1,20 @@
 def statusCode =''
 pipeline {
     agent any
-    
+    environment
+    {
+         Path="C:\\Windows\\System32"
+    }
      
     stages {
         stage('Build CPP Program') {
             steps {
                 script
                 {
-                    environment {
-             env.PATH = env.PATH+";c:\\Windows\\System32"  
+                 
                 
                     bat 'g++ HelloWorld.cpp -o HelloWorld'
-                    }
+                    
                   }
                 
             }
@@ -26,11 +28,10 @@ pipeline {
                 script
                 {
                     
-                    environment {
-                    env.PATH = env.PATH+";c:\\Windows\\System32"
+                    
                       statusCode= bat script: "HelloWorld.exe", returnStatus:true
                        
-                    }
+                    
                     
                 }
                 echo "${statusCode}" 
