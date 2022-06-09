@@ -22,7 +22,10 @@ pipeline {
             steps {
                 script
                 {
+                    environment {
+             env.PATH = env.PATH + ";c:\\Windows\\System32"
                     bat 'HelloWorld'
+                    }
                 }
             }
         }
