@@ -16,7 +16,7 @@ pipeline {
             }
         }
         
-    }
+    
      
         stage('Hello') {
             steps {
@@ -24,5 +24,5 @@ pipeline {
             }
         }
     
-   
+    }
 }
