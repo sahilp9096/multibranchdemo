@@ -23,12 +23,12 @@ pipeline {
                 script
                 {
                     environment {
-             env.PATH = env.PATH + ";c:\\Windows\\System32"
+                        env.PATH = env.PATH + ";c:\\Windows\\System32"
                     
                         def statusCode = bat script: "HelloWorld", returnStatus:true
-                       
+                        echo statusCode
                     }
-                    echo statusCode
+                    
                 }
             }
         }
