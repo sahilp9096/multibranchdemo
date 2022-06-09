@@ -30,8 +30,7 @@ pipeline {
                     }
                     
                 }
-                def statusCode = bat script: "HelloWorld", returnStatus:true
-                echo "$statusCode"
+                
             }
         }
     
