@@ -4,10 +4,9 @@ pipeline {
     stages {
         stage('Build CPP Program') {
             steps {
-                echo "building"
+                g++ HelloWorld.cpp -o helloworld
             }
         }
         
- 
-
+    }
 }
