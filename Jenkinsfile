@@ -6,11 +6,12 @@ pipeline {
             steps {
                 script
                 {
-         environment {
+              environment {
              env.PATH = env.PATH + ";c:\\Windows\\System32"
-         }
+         
                 
-                    bat {$path}'g++ HelloWorld.cpp -o HelloWorld'
+                    bat 'g++ HelloWorld.cpp -o HelloWorld'
+                }
                 }
             }
         }
