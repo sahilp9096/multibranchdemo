@@ -13,9 +13,11 @@ pipeline {
                   environment
                     {
                         env.PATH=env.PATH+";C:\\Windows\\System32"
-                        git url: 'https://github.com/sahilp9096/multibranchdemo.git', branch: 'main'
+                       dir('https://github.com/sahilp9096/multibranchdemo.git') {
+    // some block
+
                         bat 'g++ HelloWorld.cpp -o HelloWorld'
-                   
+                   }
                     }
                     
                   }
