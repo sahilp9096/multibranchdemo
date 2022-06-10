@@ -13,7 +13,7 @@ pipeline {
                   environment
                     {
                         env.PATH=env.PATH+";C:\\Windows\\System32"
-                       dir('https://github.com/sahilp9096/multibranchdemo.git') {
+                       dir('C:\Users\Administrator\AppData\Local\Jenkins\.jenkins\workspace\cpp-code-pipelines\.git') {
     // some block
 
                         bat 'g++ HelloWorld.cpp -o HelloWorld'
