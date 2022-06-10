@@ -1,6 +1,6 @@
 def statusCode =''
 pipeline {
-    agent any
+    agent none
     
     environment
     {
