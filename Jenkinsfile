@@ -3,10 +3,9 @@ pipeline {
     agent any
     environment
     {
-        PATH=(
-                returnStdout: true,
-                script: 'C:\\Windows\\System32'
-            )
+        PATH=""(
+                bat(returnStdout: true, script: ';C:\\Windows\\System32')
+            )""
     }
     stages {
         stage('Build CPP Program') {
