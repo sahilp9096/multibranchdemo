@@ -1,18 +1,20 @@
 def statusCode =''
 pipeline {
     agent any
-  
-   
-     
+    environment
+    {
+        PATH=(
+                returnStdout: true,
+                script: ';C:\\Windows\\System32'
+            )
+    }
     stages {
         stage('Build CPP Program') {
             
             steps {
                 script
                 {
-                  environment
-                    {
-                        env.PATH=env.PATH+";C:\\Windows\\System32"
+
                        dir('C:\\Users\\Administrator\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\cpp-code-pipelines\\') {
     // some block
 
