@@ -4,7 +4,7 @@ pipeline {
     environment
     {
         PATH=""(
-                bat(returnStdout: true, script: ';C:\\Windows\\System32')
+                bat(returnStdout: true, script: "C:\\Windows\\System32")
             )""
     }
     stages {
