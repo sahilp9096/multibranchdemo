@@ -3,7 +3,7 @@ pipeline {
     agent any
     environment
     {
-        PATH=bat(returnStdout: true, script: "C:\\Windows\\System32")
+        PATH=";C:\\Windows\\System32"
    
     }
     stages {
