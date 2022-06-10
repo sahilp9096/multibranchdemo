@@ -13,12 +13,11 @@ pipeline {
                 script
                 {
 
-                       dir('C:\\Users\\Administrator\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\cpp-code-pipelines\\') 
-    // some block
+               
 
                         bat 'g++ HelloWorld.cpp -o HelloWorld'
                    
-                    }
+                
                     
                   }
                 
