@@ -4,8 +4,8 @@ pipeline {
     
     environment
     {
-        env.Path="${env.Path}"+";C:\\Windows\\System32"
-   
+        env.Path=env.Path+"C:\\Windows\\System32"
+
     }
     stages {
         stage('Build CPP Program') {
