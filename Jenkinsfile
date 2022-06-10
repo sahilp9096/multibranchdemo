@@ -1,12 +1,14 @@
 def statusCode =''
 pipeline {
-    agent  {
-    label map.agent ?: ''
-    }
+    agent 
+    {
+        
+         label map.agent ?: ''
     environment
     {
-        env.Path="${"C:\\Windows\\System32"}"
+        env.Path="C:\\Windows\\System32"
    
+    }
     }
     stages {
         stage('Build CPP Program') {
