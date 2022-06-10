@@ -4,7 +4,7 @@ pipeline {
     
     environment
     {
-        Path='C:\\Windows\\System32'
+        Path='C:\Windows\System32'
 
     }
     stages {
