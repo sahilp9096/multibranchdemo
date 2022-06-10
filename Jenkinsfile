@@ -34,7 +34,7 @@ pipeline {
                 
                 script
                 {
-                      env.PATH=env.PATH+";C:\\Windows\\System32"
+                      
                     
                       statusCode= bat script: "HelloWorld.exe", returnStatus:true
                        
@@ -45,5 +45,5 @@ pipeline {
             }
         }
     
-    }
+    
 }
