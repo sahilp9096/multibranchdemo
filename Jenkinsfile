@@ -1,11 +1,7 @@
 def statusCode =''
 pipeline {
     agent any
-    environment
-   {
-       
-       
-     }
+  
    
      
     stages {
