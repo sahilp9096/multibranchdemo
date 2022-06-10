@@ -5,16 +5,18 @@ pipeline {
      
     stages {
         stage('Build CPP Program') {
+            environment
+                    {
+                    env.PATH=env.PATH+";C:\\Windows\\System32"
+                    }
             steps {
                 script
                 {
-                  environment
-                    {
-                    env.PATH=env.PATH+";C:\\Windows\\System32"
+                  
     
                      bat 'g++ HelloWorld.cpp -o HelloWorld'
                    
-                    }
+                    
                     
                   }
                 
@@ -24,17 +26,19 @@ pipeline {
     
      
         stage('Run code') {
+            environment
+                    {
+                    env.PATH=env.PATH+";C:\\Windows\\System32"
+                    }
             steps {
                 
                 script
                 {
-                     environment
-                    {
-                    env.PATH=env.PATH+";C:\\Windows\\System32"
+                     
                     
                       statusCode= bat script: "HelloWorld.exe", returnStatus:true
                        
-                    }
+                    
                     
                 }
                 echo "${statusCode}" 
