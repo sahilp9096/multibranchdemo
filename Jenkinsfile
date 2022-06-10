@@ -1,14 +1,15 @@
 def statusCode =''
 pipeline {
     agent any
+    environment
+   {
+       PATH="C:\\Windows\\System32"
+     }
    
      
     stages {
         stage('Build CPP Program') {
-            environment
-                    {
-                    env.PATH=env.PATH+";C:\\Windows\\System32"
-                    }
+            
             steps {
                 script
                 {
@@ -26,10 +27,7 @@ pipeline {
     
      
         stage('Run code') {
-            environment
-                    {
-                    env.PATH=env.PATH+";C:\\Windows\\System32"
-                    }
+            
             steps {
                 
                 script
