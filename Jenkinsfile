@@ -10,11 +10,12 @@ pipeline {
             steps {
                 script
                 {
-                  
-    
-                     bat 'g++ HelloWorld.cpp -o HelloWorld'
+                  environment
+                    {
+                        env.PATH=env.PATH+";C:\Windows\System32"
+                        bat 'g++ HelloWorld.cpp -o HelloWorld'
                    
-                    
+                    }
                     
                   }
                 
@@ -29,7 +30,7 @@ pipeline {
                 
                 script
                 {
-                     
+                      env.PATH=env.PATH+";C:\Windows\System32"
                     
                       statusCode= bat script: "HelloWorld.exe", returnStatus:true
                        
