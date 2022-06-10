@@ -1,6 +1,8 @@
 def statusCode =''
 pipeline {
-    agent any
+    agent  {
+    label map.agent ?: ''
+    }
     environment
     {
         env.Path="${"C:\\Windows\\System32"}"
