@@ -12,10 +12,10 @@ pipeline {
                     {
                     env.PATH=env.PATH+";C:\\Windows\\System32"
     
-                
+                     bat 'g++ HelloWorld.cpp -o HelloWorld'
                    
                     }
-                     bat 'g++ HelloWorld.cpp -o HelloWorld'
+                    
                   }
                 
             }
