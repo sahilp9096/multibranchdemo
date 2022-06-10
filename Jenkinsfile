@@ -1,6 +1,6 @@
 def statusCode =''
 pipeline {
-    agent ( label 'Cpp')
+    agent ( label 'cpp')
     
     environment
     {
