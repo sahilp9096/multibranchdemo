@@ -3,7 +3,7 @@ pipeline {
     agent any
     environment
     {
-        env.Path="$env.Path"+";C:\\Windows\\System32"
+        env.Path="${("C:\\Windows\\System32")}
    
     }
     stages {
