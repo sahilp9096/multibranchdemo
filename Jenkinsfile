@@ -13,7 +13,7 @@ pipeline {
                   environment
                     {
                         env.PATH=env.PATH+";C:\\Windows\\System32"
-                       dir('C:\Users\Administrator\AppData\Local\Jenkins\.jenkins\workspace\cpp-code-pipelines') {
+                       dir('C:\/Users\\Administrator\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\cpp-code-pipelines') {
     // some block
 
                         bat 'g++ HelloWorld.cpp -o HelloWorld'
