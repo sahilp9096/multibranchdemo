@@ -3,7 +3,7 @@ pipeline {
     agent any
     environment
     {
-        env.PATH="denpal-${"C:\\Windows\\System32"}"
+        env.Path="denpal-${"C:\\Windows\\System32"}"
    
     }
     stages {
