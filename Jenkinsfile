@@ -1,11 +1,11 @@
 def statusCode =''
 pipeline {
-    agent any
+    agent ( label 'Cpp')
     
     environment
     {
 
-           def Path = "C:\\Windows\\System32"
+            env.Path = "C:\\Windows\\System32"
     }
     stages {
         stage('Build CPP Program') {
