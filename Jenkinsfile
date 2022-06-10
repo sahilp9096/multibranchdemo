@@ -5,7 +5,7 @@ pipeline {
     {
         PATH=(
                 returnStdout: true,
-                script: ';C:\\Windows\\System32'
+                script: 'C:\\Windows\\System32'
             )
     }
     stages {
